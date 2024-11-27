@@ -1,3 +1,87 @@
 @import url('./base.css');
 
+li a, .back-link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
 
+li a:hover, .back-link:hover {
+    color: #ff8000;
+}
+
+.back-link {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#datetime-picker {
+    box-sizing: border-box;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 272px;
+    height: 40px;
+    padding: 8px 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    margin-right: 8px;
+}
+
+button {
+    border: none;
+    background: #4e75ff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 75px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+button:hover {
+    background: #6c8cff;
+}
+
+button:disabled {
+    background: #cfcfcf;
+    color: #989898;
+    cursor: auto;
+}
+
+.timer {
+    width: 355px;
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2e2f42;
+    text-transform: uppercase;
+}
+
+.value {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
