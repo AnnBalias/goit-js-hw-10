@@ -49,8 +49,9 @@ function convertMs(ms) {
 }
 
 btn.addEventListener('click', handStart);
-function handStart() {
+function handStart(event) {
   input.disabled = true;
+  btn.disabled = true;
   const interval = setInterval(() => {
     if (userSelectedDate > 1000) {
       userSelectedDate -= 1000;
@@ -59,7 +60,6 @@ function handStart() {
       hourSpan.textContent = `${hours}`.padStart(2, '0');
       minSpan.textContent = `${minutes}`.padStart(2, '0');
       secSpan.textContent = `${seconds}`.padStart(2, '0');
-      btn.disabled = true;
     } else {
       clearInterval(interval);
       input.disabled = false;

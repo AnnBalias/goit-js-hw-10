@@ -2,10 +2,6 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const form = document.querySelector('form');
-const inpDelay = document.querySelector('input[name="delay"]');
-const inpFulfilled = document.querySelector('input[value="fulfilled"]');
-const inpRejected = document.querySelector('input[value="rejected"]');
-const btn = document.querySelector('button');
 
 form.addEventListener('submit', handSubmit);
 function handSubmit(event) {
